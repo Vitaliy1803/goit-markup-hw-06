@@ -203,6 +203,7 @@ body {
   color: var(--btn-text-color);
   background-color: var(--btn-backroubd-color);
   border-radius: 4px;
+  border: none;
   padding: 16px 32px;
 
   transition-property: background-color;
@@ -268,7 +269,7 @@ body {
   align-items: center;
 }
 
-.backdrop-button:active {
+.backdrop-button:hover {
   border: none;
   background-color: #404bbf;
   fill: #ffffff;
@@ -336,6 +337,14 @@ body {
   cursor: pointer;
   margin-left: auto;
   margin-right: auto;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-button:hover {
+  background-color: #404bbf;
 }
 
 .modal-label-title {
@@ -409,6 +418,7 @@ body {
 .input-check:checked + .check-text span {
   background-color: #404bbf;
   border: none;
+  
 }
 
 /* sections */
@@ -706,6 +716,14 @@ body {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-subscribe-button:hover {
+  background-color: #404bbf;
 }
 
 /* portfolio.html */
